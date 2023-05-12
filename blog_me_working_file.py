@@ -31,47 +31,9 @@ data.groupby(['source_id'])['engagement_reaction_count'].sum()
 #dropping a column
 data = data.drop('engagement_comment_plugin_count' , axis=1)
 
-# #functions in python
-
-# def my_function():
-#     print("hello world")
-
-# #This is a function with variables 
-
-# def second_function(fname, surname, location):
-#     print(fname + " " + surname + " I'm from " + location)
-#     return fname, surname, location
-
-# a = second_function("Emil", "Ben", "SG")
-
-# #for loops in functions 
-
-# def favfood(food):
-#     for x in food:
-#         print('Top food is ' + x)
-
-# fastfood = ['burgers', 'fries', 'pizza']
-
-# favfood(fastfood)
-
-#creating a keyword flag 
-
 keyword = 'crash'
 
 #lets create a for loop to isolate each title row
-
-# length = len(data)
-# keyword_flag = []
-# for x in range(0,length):
-#     heading = data['title'][x]
-#     if keyword in heading:
-#         flag = 1 
-#     else:
-#         flag = 0
-#     keyword_flag.append(flag)
-
-#creating a function
-#user will input the keyword that will be used to flag the titles
 
 def keywordflag(keyword):
     length = len(data)
